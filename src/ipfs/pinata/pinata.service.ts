@@ -1,5 +1,5 @@
 import { Inject, Injectable } from "@nestjs/common";
-import type { PinataClient } from "@pinata/sdk";
+import PinataClient from "@pinata/sdk";
 import fs from "fs";
 
 import { DataService } from "../../data/data.service";

@@ -1,6 +1,5 @@
 import { ConfigService } from "@nestjs/config";
-import type { PinataClient } from "@pinata/sdk";
-import pinataSDK from "@pinata/sdk";
+import  PinataClient from "@pinata/sdk";
 
 import { IpfsProviderType } from "../../common/constants";
 
@@ -10,6 +9,6 @@ export const pinataProvider = {
   useFactory: (configService: ConfigService): PinataClient => {
     const pinataApiKey = configService.get<string>("PINATA_API_KEY", "");
     const pinataApiSecret = configService.get<string>("PINATA_API_SECRET", "");
-    return pinataSDK(pinataApiKey, pinataApiSecret);
+    return new PinataClient(pinataApiKey, pinataApiSecret);
   },
 };
