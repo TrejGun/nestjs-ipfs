@@ -31,19 +31,19 @@ export class Web3StorageService {
 
   public pinFileToIPFS(filePath: string): Promise<string> {
     const stream = fs.createReadStream(filePath);
-    return this.client.put([{ name: "name", stream: () => stream }], {
+    return this.client.put([{ name: "name", stream: () => Readable.toWeb(stream) }], {
       wrapWithDirectory: false,
     });
   }
 
   public async pinJSONToIPFS(data: Record<string, any>): Promise<string> {
-    const stream = this.getReadableStream(Buffer.from(JSON.stringify(data)));
-    return this.client.put([{ name: "name", stream: () => stream }], {
+    const stream = this.getReadStream(Buffer.from(JSON.stringify(data)));
+    return this.client.put([{  name: "name", stream: () => Readable.toWeb(stream) }], {
       wrapWithDirectory: false,
     });
   }
 
-  public getReadableStream(buffer: Buffer): Readable {
+  public getReadStream(buffer: Buffer): Readable {
     const stream = new Readable();
     stream.push(buffer);
     stream.push(null);
