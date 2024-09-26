@@ -1,5 +1,5 @@
 import { ConfigService } from "@nestjs/config";
-import  PinataClient from "@pinata/sdk";
+import PinataClient from "@pinata/sdk";
 
 import { IpfsProviderType } from "../../common/constants";
 

@@ -38,7 +38,7 @@ export class Web3StorageService {
 
   public async pinJSONToIPFS(data: Record<string, any>): Promise<string> {
     const stream = this.getReadStream(Buffer.from(JSON.stringify(data)));
-    return this.client.put([{  name: "name", stream: () => Readable.toWeb(stream) }], {
+    return this.client.put([{ name: "name", stream: () => Readable.toWeb(stream) }], {
       wrapWithDirectory: false,
     });
   }

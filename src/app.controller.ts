@@ -4,5 +4,7 @@ import { Controller, Get, Redirect } from "@nestjs/common";
 export class AppController {
   @Get("/")
   @Redirect("/swagger", 301)
-  public redirect(): void {}
+  public redirect(): void {
+    // empty
+  }
 }
