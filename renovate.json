@@ -1,4 +1,10 @@
 {
   "extends": ["github>trejgun/renovate-config"],
-  "baseBranches": ["master"]
+  "baseBranches": ["master"],
+  "packageRules": [
+    {
+      "matchPackageNames": ["ipfs-http-client"],
+      "allowedVersions": "<=56.0.3"
+    }
+  ]
 }
