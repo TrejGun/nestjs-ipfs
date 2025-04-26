@@ -8,11 +8,11 @@
     "url": "https://github.com/ethberry/nestjs-ipfs"
   },
   "dependencies": {
-    "@nestjs/common": "11.0.20",
+    "@nestjs/common": "11.1.0",
     "@nestjs/config": "4.0.2",
-    "@nestjs/core": "11.0.20",
-    "@nestjs/platform-express": "11.0.20",
-    "@nestjs/swagger": "11.1.4",
+    "@nestjs/core": "11.1.0",
+    "@nestjs/platform-express": "11.1.0",
+    "@nestjs/swagger": "11.1.5",
     "@pinata/sdk": "2.1.0",
     "dotenv": "16.5.0",
     "express": "4.21.2",
@@ -26,7 +26,7 @@
   "devDependencies": {
     "@ethberry/cross-env": "0.0.5",
     "@ethberry/eslint-config": "5.0.5",
-    "@nestjs/testing": "11.0.20",
+    "@nestjs/testing": "11.1.0",
     "@types/express": "5.0.1",
     "@types/jest": "29.5.14",
     "@types/node": "22.15.2",
