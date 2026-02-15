@@ -24,3 +24,5 @@ jobs:
         run: npm run build
       - name: Npm run test
         run: npm run test
+        env:
+          PINATA_JWT: ${{ secrets.PINATA_JWT }}
