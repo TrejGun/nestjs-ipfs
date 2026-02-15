@@ -30,3 +30,7 @@ jobs:
         run: npm run build
       - name: Npm run test
         run: npm run test
+        env:
+          PINATA_JWT: ${{ secrets.PINATA_JWT }}
+          PINATA_API_KEY: ${{ secrets.PINATA_API_KEY }}
+          PINATA_API_SECRET: ${{ secrets.PINATA_API_SECRET }}
