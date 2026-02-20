@@ -10,10 +10,10 @@
   "dependencies": {
     "@helia/json": "4.0.7",
     "@helia/unixfs": "4.0.3",
-    "@nestjs/common": "11.1.13",
+    "@nestjs/common": "11.1.14",
     "@nestjs/config": "4.0.3",
-    "@nestjs/core": "11.1.13",
-    "@nestjs/platform-express": "11.1.13",
+    "@nestjs/core": "11.1.14",
+    "@nestjs/platform-express": "11.1.14",
     "@nestjs/swagger": "11.2.6",
     "@pinata/sdk": "2.1.0",
     "dotenv": "16.6.1",
@@ -28,7 +28,7 @@
   "devDependencies": {
     "@ethberry/cross-env": "0.0.5",
     "@ethberry/eslint-config": "5.0.9",
-    "@nestjs/testing": "11.1.13",
+    "@nestjs/testing": "11.1.14",
     "@types/express": "5.0.6",
     "@types/jest": "29.5.14",
     "@types/node": "22.19.11",
