@@ -8,8 +8,8 @@
     "url": "https://github.com/ethberry/nestjs-ipfs"
   },
   "dependencies": {
-    "@helia/json": "6.0.0",
-    "@helia/unixfs": "8.0.0",
+    "@helia/json": "6.0.2",
+    "@helia/unixfs": "8.0.2",
     "@nestjs/common": "11.1.27",
     "@nestjs/config": "4.0.4",
     "@nestjs/core": "11.1.27",
